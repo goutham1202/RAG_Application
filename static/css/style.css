@@ -1,0 +1,184 @@
+body{
+    background-image: url('../images/gb.jpg') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
+    overflow: hidden;
+}
+
+.container{
+    float: left;
+    }
+
+.left{
+    width: 25%;
+}
+
+.right{
+    width: 75%;
+}
+  
+.image {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+  }
+  
+  .image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.5s ease; /* Optional zoom effect on hover */
+      
+      padding: 5px;
+  }
+  
+  .image:hover img {
+      transform: scale(1.2); /* Zooms the image on hover */
+  }
+  
+  /* Overlay Styling */
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .image:hover .overlay {
+      opacity: 1;
+  }
+  
+  /* Text inside overlay */
+  .text {
+      text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+      font-family: sans; color: rgb(232, 232, 39);
+      font-size: 35px;
+      font-weight:350;
+      text-align: center;
+      padding: 10px;
+  }
+
+  h1{
+    padding-top: 50px;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Dancing Script', serif;
+    
+}
+
+h4{
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 40px;
+    
+}
+
+form {
+    background-color:white;
+    width: 75%;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-self: center;
+  }
+
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  ::placeholder {
+    color: gray;
+    opacity: 0.7; 
+  }
+
+  svg {
+    color: black;
+    fill: currentColor;
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+
+  .scroller__inner {
+    padding-block: 1rem;
+    display: block;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    height: max-content;
+    flex-wrap: nowrap;
+    animation:scroll-vertical 
+     var(--_animation-duration, 70s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  @keyframes scroll-vertical {
+    to {
+      transform: translateY(calc(-50% - 0.5rem));
+    }
+  }
+
+  .btn-group button {
+    color: black;
+    padding: 5px 17px; 
+    cursor: pointer; 
+    width: 50px; 
+    height: auto;
+    border: 2px solid black;
+    display: block;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; 
+  }
+  
+  .btn-group{
+    margin: 5px;
+    float: right;
+    display: block;
+  }
+
+  #chat-output {
+    max-height: 380px;   /* Adjust height as needed */
+    overflow-y: auto;     /* Enables vertical scrolling */
+    border: none;         /* No border initially */
+    padding: 10px;        /* Optional: adds padding inside the container */
+    margin-bottom: 20px;  /* Optional: gives some space below the chat output */
+    margin-top: 20px;
+}
+
+#chat-output.has-content {
+  border: 1px solid #ddd;  /* Adds border when there is content */
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
