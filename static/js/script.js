@@ -93,7 +93,7 @@ chatForm.addEventListener('submit', (event) => {
         } else {
             const formattedResponse = formatChatOutput(data.response);
             chatOutput.innerHTML += `<em style="color: DarkSlateGray;">You: ${message}</em>`;
-            chatOutput.innerHTML += `<br><em style="color: DarkSlateGray;">RagAI:</em> ${formattedResponse}<br><br>`;
+            chatOutput.innerHTML += `<br><em style="color: DarkSlateGray;">Wodeyar's AI:</em> ${formattedResponse}<br><br>`;
 
                // Toggle the border based on content inside
             if (chatOutput.innerHTML.trim() !== "") {

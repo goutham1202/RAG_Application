@@ -39,7 +39,7 @@ except Exception as e:
 
 # Initialize Pinecone and embedding model
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-index = pc.Index("sirinadu")
+index = pc.Index("ragapp")
 embedding_model = SentenceTransformer('intfloat/multilingual-e5-large')
 
 translator = Translator()

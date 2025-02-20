@@ -1,5 +1,5 @@
 body{
-    background-image: url('../images/gb.jpg') ;
+    background-image: url('../images/bg1.png') ;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgba(255, 255, 255, 0.7);
@@ -59,9 +59,9 @@ body{
   /* Text inside overlay */
   .text {
       text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-      font-family: sans; color: rgb(232, 232, 39);
-      font-size: 35px;
-      font-weight:350;
+      font-family: sans; color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight:300;
       text-align: center;
       padding: 10px;
   }
