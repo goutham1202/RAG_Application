@@ -33,13 +33,13 @@ const lang2 = document.getElementById("lang2");
 function changeContentKan()
 {
   lang.innerHTML = " ಸಿರಿನಾಡುಗೆ ಸುಸ್ವಾಗತ";
-  lang2.innerHTML = "ಕರ್ನಾಟಕದ ಪರಂಪರೆ";
+  lang2.innerHTML = "ಒಡೆಯರ್‌ಗಳ ರಾಜ ಪರಂಪರೆ";
 }
 
 function changeContentEng()
 {
   lang.innerHTML = "Welcome to Sirinadu";
-  lang2.innerHTML = "Heritage of Karnataka";
+  lang2.innerHTML = "Royal Heritage of the Wodeyars";
 }
 
 kannadaButton.addEventListener('click', changeContentKan);
