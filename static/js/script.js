@@ -32,7 +32,7 @@ const lang2 = document.getElementById("lang2");
 
 function changeContentKan()
 {
-  lang.innerHTML = " ಸಿರಿನಾಡುಗೆ ಸುಸ್ವಾಗತ";
+  lang.innerHTML = " ಸಿರಿನಾಡಿಗೆ ಸುಸ್ವಾಗತ";
   lang2.innerHTML = "ಒಡೆಯರ್‌ಗಳ ರಾಜ ಪರಂಪರೆ";
 }
 
