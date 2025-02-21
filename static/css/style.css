@@ -138,7 +138,7 @@ form {
     height: max-content;
     flex-wrap: nowrap;
     animation:scroll-vertical 
-     var(--_animation-duration, 70s)
+     var(--_animation-duration, 90s)
       var(--_animation-direction, forwards) linear infinite;
   }
   
