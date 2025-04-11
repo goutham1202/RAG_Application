@@ -178,3 +178,13 @@ border: 1px solid #ddd;  /* Adds border when there is content */
 border-radius: 10px;
 background-color: whitesmoke;
 }
+
+.footer {
+  color: black; /* Text color */
+  text-align:right;
+  font:bold 18px;
+  padding: 5px 17px; /* Padding around the footer */
+  position: fixed; /* Make it stick to the bottom of the page */
+  bottom: 0;
+  width: 100%;
+}
