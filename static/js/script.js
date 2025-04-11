@@ -32,8 +32,8 @@ const lang2 = document.getElementById("lang2");
 
 function changeContentKan()
 {
-  lang.innerHTML = " ಸಿರಿನಾಡಿಗೆ ಸುಸ್ವಾಗತ";
-  lang2.innerHTML = "ಒಡೆಯರ ರಾಜ ಪರಂಪರೆ";
+  lang.innerHTML = " ಸಿರಿನಾಡುಗೆ ಸುಸ್ವಾಗತ";
+  lang2.innerHTML = "ಒಡೆಯರ್‌ಗಳ ರಾಜ ಪರಂಪರೆ";
 }
 
 function changeContentEng()
@@ -158,3 +158,10 @@ navigator.mediaDevices.getUserMedia({ audio: true })
     
         return text;
     }
+
+window.onload = () => {
+    window.scrollTo(0, 0);
+};
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+ }
